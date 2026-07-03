@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="light" dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Qarar - التوقعات المالية</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {"outline": "#76777d","on-secondary-fixed": "#001a42","on-secondary": "#ffffff","inverse-primary": "#bec6e0","on-primary-container": "#7c839b","on-primary": "#ffffff","surface-dim": "#d8dadc","on-surface": "#191c1e","on-secondary-fixed-variant": "#004395","on-primary-fixed-variant": "#3f465c","on-error-container": "#93000a","tertiary": "#000000","surface": "#f7f9fb","background": "#f7f9fb","surface-container": "#eceef0","secondary-fixed-dim": "#adc6ff","primary-fixed": "#dae2fd","on-tertiary-container": "#009668","on-tertiary-fixed-variant": "#005236","secondary": "#0058be","tertiary-fixed": "#6ffbbe","on-tertiary": "#ffffff","outline-variant": "#c6c6cd","surface-container-lowest": "#ffffff","surface-container-low": "#f2f4f6","tertiary-fixed-dim": "#4edea3","surface-container-high": "#e6e8ea","primary": "#000000","surface-variant": "#e0e3e5","primary-container": "#131b2e","on-background": "#191c1e","on-secondary-container": "#fefcff","inverse-on-surface": "#eff1f3","on-tertiary-fixed": "#002113","secondary-fixed": "#d8e2ff","secondary-container": "#2170e4","on-primary-fixed": "#131b2e","tertiary-container": "#002113","on-surface-variant": "#45464d","surface-bright": "#f7f9fb","surface-tint": "#565e74","inverse-surface": "#2d3133","on-error": "#ffffff","error": "#ba1a1a","primary-fixed-dim": "#bec6e0","surface-container-highest": "#e0e3e5","error-container": "#ffdad6"},
+                "borderRadius": {"DEFAULT": "0.125rem","lg": "0.25rem","xl": "0.5rem","full": "0.75rem"},
+                "spacing": {"sm": "8px","container-margin": "40px","xs": "4px","gutter": "20px","base": "4px","xl": "32px","md": "16px","lg": "24px"},
+                "fontFamily": {"body-md": ["IBM Plex Sans Arabic"],"headline-md": ["IBM Plex Sans Arabic"],"body-lg": ["IBM Plex Sans Arabic"],"body-sm": ["IBM Plex Sans Arabic"],"label-md": ["IBM Plex Sans Arabic"],"display-lg": ["IBM Plex Sans Arabic"],"headline-lg-mobile": ["IBM Plex Sans Arabic"],"headline-lg": ["IBM Plex Sans Arabic"],"label-sm": ["IBM Plex Sans Arabic"]},
+                "fontSize": {"body-md": ["16px", {"lineHeight": "24px","fontWeight": "400"}],"headline-md": ["24px", {"lineHeight": "32px","fontWeight": "600"}],"body-lg": ["18px", {"lineHeight": "28px","fontWeight": "400"}],"body-sm": ["14px", {"lineHeight": "20px","fontWeight": "400"}],"label-md": ["14px", {"lineHeight": "20px","letterSpacing": "0.02em","fontWeight": "600"}],"display-lg": ["48px", {"lineHeight": "56px","letterSpacing": "-0.02em","fontWeight": "600"}],"headline-lg-mobile": ["28px", {"lineHeight": "36px","fontWeight": "600"}],"headline-lg": ["32px", {"lineHeight": "40px","letterSpacing": "-0.01em","fontWeight": "600"}],"label-sm": ["12px", {"lineHeight": "16px","fontWeight": "600"}]}
+            }
+        }
+    }
+</script>
+<style>
+    body { font-family: 'IBM Plex Sans Arabic', sans-serif; background-color: #f7f9fb; -webkit-tap-highlight-color: transparent; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .stability-trend { mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent); }
+    .mobile-menu-overlay { transition: opacity 0.3s ease; }
+    .mobile-menu-overlay.opacity-100 { opacity: 1; }
+    .mobile-menu-content { transition: transform 0.3s ease; }
+</style>
+</head>
+<body>
+<div class="flex min-h-screen">
+    <!-- Mobile Navigation Overlay -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 z-40 hidden mobile-menu-overlay opacity-0"></div>
+    
+    <!-- Mobile Sidebar -->
+    <aside id="mobile-sidebar" class="fixed right-0 top-0 h-full w-72 bg-primary-container z-50 transform translate-x-full mobile-menu-content flex flex-col py-lg shrink-0">
+        <div class="px-md mb-xl flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img alt="Qarar Logo" class="w-10 h-10 grayscale brightness-200" src="https://lh3.googleusercontent.com/aida/AP1WRLuMMZPHnRw6s71ePeGiD_H-j7Vc2JkTCm38agMhnVHpi0FrSYH554DwGUxaIFwOqo4W57EPHQNHottMjl9IgCv29rhowyOkDFnRWgR_OmkV50ydi-u_2uo82KKJ-MU20Va5_FQsBxG3gRzXeOSY4rG7XuMDaIf8YS22NHHSjZGQHDUuD-UKTwHY4WtY4WWya6cK3DMnrB12QTVsinhAmBAz3bS4zaa_ygTMXtWI10fMlgPv34hJFn6sTNg">
+                <div>
+                    <h1 class="text-headline-md font-bold text-primary-fixed">قرار</h1>
+                    <p class="text-label-sm text-on-primary-container">الذكاء المالي</p>
+                </div>
+            </div>
+            <button id="close-menu" class="text-on-primary-container p-2">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        <nav class="flex-1 px-sm space-y-1">
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="index.html">
+                <span class="material-symbols-outlined">home</span>
+                <span class="text-label-md">الرئيسية</span>
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="analyze.html">
+                <span class="material-symbols-outlined">bar_chart</span>
+                <span class="text-label-md">التحليلات</span>
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="simulate.html">
+                <span class="material-symbols-outlined">account_balance_wallet</span>
+                <span class="text-label-md">المحاكاة</span>
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 bg-secondary text-on-secondary rounded-lg" href="prediction.html">
+                <span class="material-symbols-outlined">trending_up</span>
+                <span class="text-label-md">التوقعات</span>
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="assistant.html">
+                <span class="material-symbols-outlined">psychology</span>
+                <span class="text-label-md">المستشار الذكي</span>
+            </a>
+        </nav>
+        <div class="mt-auto px-md pt-lg space-y-4">
+            <button class="w-full py-3 bg-secondary-fixed text-on-secondary-fixed font-bold rounded-lg text-sm">ترقية الخطة</button>
+            <div class="border-t border-outline-variant opacity-20 my-4"></div>
+            <a class="flex items-center gap-3 px-4 py-2 text-error" href="#">
+                <span class="material-symbols-outlined">logout</span>
+                <span class="text-label-md">تسجيل الخروج</span>
+            </a>
+        </div>
+    </aside>
+
+    <!-- Desktop Sidebar -->
+    <aside class="hidden lg:flex flex-col w-64 bg-primary-container border-l border-outline-variant py-lg shrink-0">
+        <div class="px-md mb-xl flex items-center gap-3">
+            <img alt="Qarar Logo" class="w-10 h-10 grayscale brightness-200" src="https://lh3.googleusercontent.com/aida/AP1WRLuMMZPHnRw6s71ePeGiD_H-j7Vc2JkTCm38agMhnVHpi0FrSYH554DwGUxaIFwOqo4W57EPHQNHottMjl9IgCv29rhowyOkDFnRWgR_OmkV50ydi-u_2uo82KKJ-MU20Va5_FQsBxG3gRzXeOSY4rG7XuMDaIf8YS22NHHSjZGQHDUuD-UKTwHY4WtY4WWya6cK3DMnrB12QTVsinhAmBAz3bS4zaa_ygTMXtWI10fMlgPv34hJFn6sTNg">
+            <div>
+                <h1 class="text-headline-md font-bold text-primary-fixed">قرار</h1>
+                <p class="text-label-sm text-on-primary-container">الذكاء المالي</p>
+            </div>
+        </div>
+        <nav class="flex-1 px-sm space-y-1">
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="index.html">
+                <span class="material-symbols-outlined">home</span>
+                <span class="text-label-md">الرئيسية</span>
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="analyze.html">
+                <span class="material-symbols-outlined">bar_chart</span>
+                <span class="text-label-md">التحليلات</span>
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="simulate.html">
+                <span class="material-symbols-outlined">account_balance_wallet</span>
+                <span class="text-label-md">المحاكاة</span>
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 bg-secondary text-on-secondary rounded-lg" href="prediction.html">
+                <span class="material-symbols-outlined">trending_up</span>
+                <span class="text-label-md">التوقعات</span>
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="assistant.html">
+                <span class="material-symbols-outlined">psychology</span>
+                <span class="text-label-md">المستشار</span>
+            </a>
+        </nav>
+        <div class="mt-auto px-md pt-lg">
+            <button class="w-full py-3 bg-secondary-fixed text-on-secondary-fixed font-bold rounded-lg text-sm mb-4">ترقية الخطة</button>
+        </div>
+    </aside>
+
+<div class="flex-1 flex flex-col">
+<header class="w-full top-0 sticky z-40 bg-surface-container-lowest border-b border-outline-variant flex justify-between items-center px-lg py-md max-w-full">
+    <div class="flex items-center gap-md">
+        <button id="open-menu" aria-label="Menu" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low text-primary transition-colors duration-200">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+        <h1 class="font-headline-md text-headline-md font-bold text-primary">Qarar</h1>
+    </div>
+    <div class="flex items-center gap-md">
+        <button class="p-xs rounded-lg hover:bg-surface-container-low transition-colors duration-200 text-on-surface-variant">
+            <span class="material-symbols-outlined">notifications</span>
+        </button>
+        <div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant">
+            <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBShIk4Rs2jMIIO5P5i1LbIMdQD_IlpRhLg4ANWnywmDZFehmK76D6_EJeks7IGKwdIeRDxqBc6wqM2DDEYAhrH6jVoe84BbMkIebI9COLbYcV76GuFRBU8RiRP832lRFEpWAdBy50qCuRQH9gGY0wsv9QGkSZkGDQGKYa4PVRV5NnpMqoqy3jylQCrrqfP5qH8DqXtWD1V1BcqOgk1K2rN_eO4u5MBgpM_V1dMik6pflShRO_bMvdU"/>
+        </div>
+    </div>
+</header>
+
+<main class="px-md mt-lg space-y-lg max-w-lg mx-auto w-full pb-lg">
+    <!-- Hero Forecast Section -->
+    <section class="space-y-sm">
+        <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">خط الزمن المالي</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant">توقعات الالتزامات المالية للـ 30 يوماً القادمة</p>
+    </section>
+
+    <!-- Stability Visual Chart -->
+    <div class="bg-primary-container p-lg rounded-xl border border-outline-variant relative overflow-hidden">
+        <div class="relative z-10 flex flex-col gap-sm">
+            <span class="font-label-sm text-label-sm text-on-primary-container">توقع مؤشر الاستقرار</span>
+            <div class="flex items-baseline gap-xs">
+                <span class="text-4xl font-bold text-white">78%</span>
+                <span class="font-label-sm text-label-sm text-tertiary-fixed-dim">+2% متوقع</span>
+            </div>
+        </div>
+        <div class="mt-lg h-32 w-full flex items-end gap-1 stability-trend">
+            <div class="bg-secondary-fixed-dim/20 w-full h-[60%] rounded-t-sm"></div>
+            <div class="bg-secondary-fixed-dim/20 w-full h-[55%] rounded-t-sm"></div>
+            <div class="bg-secondary-fixed-dim/30 w-full h-[65%] rounded-t-sm"></div>
+            <div class="bg-secondary-fixed-dim/40 w-full h-[70%] rounded-t-sm"></div>
+            <div class="bg-secondary-fixed-dim/60 w-full h-[68%] rounded-t-sm"></div>
+            <div class="bg-secondary-container w-full h-[78%] rounded-t-sm relative">
+                <div class="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-white rounded-full"></div>
+            </div>
+            <div class="bg-secondary-fixed-dim/20 w-full h-[75%] rounded-t-sm border-t border-dashed border-white/30"></div>
+            <div class="bg-secondary-fixed-dim/20 w-full h-[72%] rounded-t-sm border-t border-dashed border-white/30"></div>
+        </div>
+    </div>
+
+    <!-- Smart Action Card -->
+    <section class="bg-surface-container-highest p-md rounded-xl border border-outline-variant flex items-center gap-md">
+        <div class="bg-secondary-container text-white p-sm rounded-lg">
+            <span class="material-symbols-outlined">lightbulb</span>
+        </div>
+        <div class="flex-1">
+            <p class="font-label-md text-label-md text-on-surface">إجراء ذكي مقترح</p>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">قم بحجز 1,350 ريال الآن للحفاظ على استقرارك عند 78%.</p>
+        </div>
+        <button class="bg-primary text-white px-md py-xs rounded-lg font-label-sm text-label-sm">حجز</button>
+    </section>
+
+    <!-- Forecast List -->
+    <section class="space-y-md">
+        <div class="flex justify-between items-center px-xs">
+            <h3 class="font-label-md text-label-md text-primary">المصروفات المتوقعة</h3>
+            <span class="font-label-sm text-label-sm text-secondary">عرض الكل</span>
+        </div>
+        <div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant flex justify-between items-center transition-all hover:bg-surface-container-low group">
+            <div class="flex items-center gap-md">
+                <div class="w-12 h-12 bg-surface-container-low rounded-xl flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined">bolt</span>
+                </div>
+                <div>
+                    <h4 class="font-label-md text-label-md text-on-surface">فاتورة الكهرباء المتوقعة</h4>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">موعد الاستحقاق: 25 أكتوبر</p>
+                </div>
+            </div>
+            <div class="text-left">
+                <p class="font-headline-md text-headline-md text-primary">540-620</p>
+                <p class="font-label-sm text-label-sm text-on-surface-variant">ريال سعودي</p>
+            </div>
+        </div>
+        <div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant flex justify-between items-center transition-all hover:bg-surface-container-low group">
+            <div class="flex items-center gap-md">
+                <div class="w-12 h-12 bg-surface-container-low rounded-xl flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined">autorenew</span>
+                </div>
+                <div>
+                    <h4 class="font-label-md text-label-md text-on-surface">تجديد الاشتراكات</h4>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">نتفليكس، أمازون، أخرى</p>
+                </div>
+            </div>
+            <div class="text-left">
+                <p class="font-headline-md text-headline-md text-primary">420</p>
+                <p class="font-label-sm text-label-sm text-on-surface-variant">ريال سعودي</p>
+            </div>
+        </div>
+        <div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant flex justify-between items-center border-r-4 border-r-error transition-all hover:bg-surface-container-low group">
+            <div class="flex items-center gap-md">
+                <div class="w-12 h-12 bg-error-container rounded-xl flex items-center justify-center text-error">
+                    <span class="material-symbols-outlined">school</span>
+                </div>
+                <div>
+                    <h4 class="font-label-md text-label-md text-on-surface">مصاريف المدرسة</h4>
+                    <p class="font-body-sm text-body-sm text-error font-medium">تذكير: دفعة الفصل القادم</p>
+                </div>
+            </div>
+            <div class="text-left">
+                <p class="font-headline-md text-headline-md text-primary">1,350</p>
+                <p class="font-label-sm text-label-sm text-on-surface-variant">ريال سعودي</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Predictive Insights -->
+    <section class="space-y-md">
+        <h3 class="font-label-md text-label-md text-primary px-xs">نظرة تحليلية</h3>
+        <div class="grid grid-cols-2 gap-md">
+            <div class="bg-surface-container-lowest p-md rounded-xl border border-outline-variant">
+                <p class="font-label-sm text-label-sm text-on-surface-variant mb-xs">الادخار المتوقع</p>
+                <p class="font-headline-md text-headline-md text-on-tertiary-container">+2,400 ر.س</p>
+            </div>
+            <div class="bg-surface-container-lowest p-md rounded-xl border border-outline-variant">
+                <p class="font-label-sm text-label-sm text-on-surface-variant mb-xs">تذبذب المصروفات</p>
+                <p class="font-headline-md text-headline-md text-error">منخفض</p>
+            </div>
+        </div>
+    </section>
+</main>
+</div>
+</div>
+
+<script>
+    const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+    const mobileSidebar = document.getElementById('mobile-sidebar');
+    const openMenuBtn = document.getElementById('open-menu');
+    const closeMenuBtn = document.getElementById('close-menu');
+
+    function toggleMenu(show) {
+        if (show) {
+            mobileMenuOverlay.classList.remove('hidden');
+            mobileSidebar.classList.remove('translate-x-full');
+            requestAnimationFrame(() => { mobileMenuOverlay.classList.add('opacity-100'); });
+        } else {
+            mobileMenuOverlay.classList.remove('opacity-100');
+            mobileSidebar.classList.add('translate-x-full');
+            mobileSidebar.addEventListener('transitionend', handleTransitionEnd, { once: true });
+        }
+    }
+
+    function handleTransitionEnd() {
+        if (mobileSidebar.classList.contains('translate-x-full')) {
+            mobileMenuOverlay.classList.add('hidden');
+        }
+    }
+
+    openMenuBtn?.addEventListener('click', () => toggleMenu(true));
+    closeMenuBtn?.addEventListener('click', () => toggleMenu(false));
+    mobileMenuOverlay?.addEventListener('click', () => toggleMenu(false));
+</script>
+</body>
+</html>
