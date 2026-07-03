@@ -1,117 +1,139 @@
-<!DOCTYPE html><html dir="rtl" lang="ar"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface": "#f7f9fb",
-                        "secondary-container": "#2170e4",
-                        "on-primary": "#ffffff",
-                        "tertiary-fixed-dim": "#4edea3",
-                        "inverse-surface": "#2d3133",
-                        "background": "#f7f9fb",
-                        "surface-container": "#eceef0",
-                        "surface-container-highest": "#e0e3e5",
-                        "outline-variant": "#c6c6cd",
-                        "on-secondary-fixed-variant": "#004395",
-                        "surface-tint": "#565e74",
-                        "tertiary-container": "#002113",
-                        "inverse-primary": "#bec6e0",
-                        "error": "#ba1a1a",
-                        "on-primary-fixed-variant": "#3f465c",
-                        "on-tertiary-container": "#009668",
-                        "secondary": "#0058be",
-                        "inverse-on-surface": "#eff1f3",
-                        "surface-container-lowest": "#ffffff",
-                        "surface-dim": "#d8dadc",
-                        "tertiary": "#000000",
-                        "on-error-container": "#93000a",
-                        "primary-fixed": "#dae2fd",
-                        "on-tertiary": "#ffffff",
-                        "secondary-fixed-dim": "#adc6ff",
-                        "on-tertiary-fixed": "#002113",
-                        "on-primary-container": "#7c839b",
-                        "on-background": "#191c1e",
-                        "primary-fixed-dim": "#bec6e0",
-                        "primary": "#000000",
-                        "on-primary-fixed": "#131b2e",
-                        "on-error": "#ffffff",
-                        "tertiary-fixed": "#6ffbbe",
-                        "on-secondary-fixed": "#001a42",
-                        "on-secondary": "#ffffff",
-                        "surface-container-high": "#e6e8ea",
-                        "secondary-fixed": "#d8e2ff",
-                        "on-surface": "#191c1e",
-                        "surface-variant": "#e0e3e5",
-                        "surface-bright": "#f7f9fb",
-                        "on-secondary-container": "#fefcff",
-                        "on-tertiary-fixed-variant": "#005236",
-                        "secondary-fixed": "#d8e2ff",
-                        "on-surface-variant": "#45464d",
-                        "error-container": "#ffdad6",
-                        "outline": "#76777d",
-                        "surface-container-low": "#f2f4f6"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "spacing": {
-                        "container-margin": "40px",
-                        "sm": "8px",
-                        "xs": "4px",
-                        "lg": "24px",
-                        "gutter": "20px",
-                        "md": "16px",
-                        "base": "4px",
-                        "xl": "32px"
-                    },
-                    "fontFamily": {
-                        "headline-lg": ["IBM Plex Sans"],
-                        "body-sm": ["IBM Plex Sans"],
-                        "label-sm": ["IBM Plex Sans"],
-                        "label-md": ["IBM Plex Sans"],
-                        "headline-md": ["IBM Plex Sans"],
-                        "display-lg": ["IBM Plex Sans"],
-                        "body-md": ["IBM Plex Sans"],
-                        "body-lg": ["IBM Plex Sans"],
-                        "headline-lg-mobile": ["IBM Plex Sans"]
-                    },
-                    "fontSize": {
-                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
-                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
-                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
-                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
-                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
-                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}]
-                    }
-                }
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Qarar - المستشار</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+try{
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {"surface": "#f7f9fb","secondary-container": "#2170e4","on-primary": "#ffffff","tertiary-fixed-dim": "#4edea3","inverse-surface": "#2d3133","background": "#f7f9fb","surface-container": "#eceef0","surface-container-highest": "#e0e3e5","outline-variant": "#c6c6cd","on-secondary-fixed-variant": "#004395","surface-tint": "#565e74","tertiary-container": "#002113","inverse-primary": "#bec6e0","error": "#ba1a1a","on-primary-fixed-variant": "#3f465c","on-tertiary-container": "#009668","secondary": "#0058be","inverse-on-surface": "#eff1f3","surface-container-lowest": "#ffffff","surface-dim": "#d8dadc","tertiary": "#000000","on-error-container": "#93000a","primary-fixed": "#dae2fd","on-tertiary": "#ffffff","secondary-fixed-dim": "#adc6ff","on-tertiary-fixed": "#002113","on-primary-container": "#7c839b","on-background": "#191c1e","primary-fixed-dim": "#bec6e0","primary": "#000000","on-primary-fixed": "#131b2e","on-error": "#ffffff","tertiary-fixed": "#6ffbbe","on-secondary-fixed": "#001a42","on-secondary": "#ffffff","surface-container-high": "#e6e8ea","primary-container": "#131b2e","on-surface": "#191c1e","surface-variant": "#e0e3e5","surface-bright": "#f7f9fb","on-secondary-container": "#fefcff","on-tertiary-fixed-variant": "#005236","secondary-fixed": "#d8e2ff","on-surface-variant": "#45464d","error-container": "#ffdad6","outline": "#76777d","surface-container-low": "#f2f4f6"},
+                "borderRadius": {"DEFAULT": "0.125rem","lg": "0.25rem","xl": "0.5rem","full": "0.75rem"},
+                "spacing": {"container-margin": "40px","sm": "8px","xs": "4px","lg": "24px","gutter": "20px","md": "16px","base": "4px","xl": "32px"},
+                "fontFamily": {"headline-lg": ["IBM Plex Sans Arabic"],"body-sm": ["IBM Plex Sans Arabic"],"label-sm": ["IBM Plex Sans Arabic"],"label-md": ["IBM Plex Sans Arabic"],"headline-md": ["IBM Plex Sans Arabic"],"display-lg": ["IBM Plex Sans Arabic"],"body-md": ["IBM Plex Sans Arabic"],"body-lg": ["IBM Plex Sans Arabic"],"headline-lg-mobile": ["IBM Plex Sans Arabic"]},
+                "fontSize": {"headline-lg": ["32px", {"lineHeight": "40px","letterSpacing": "-0.01em","fontWeight": "600"}],"body-sm": ["14px", {"lineHeight": "20px","fontWeight": "400"}],"label-sm": ["12px", {"lineHeight": "16px","fontWeight": "600"}],"label-md": ["14px", {"lineHeight": "20px","letterSpacing": "0.02em","fontWeight": "600"}],"headline-md": ["24px", {"lineHeight": "32px","fontWeight": "600"}],"display-lg": ["48px", {"lineHeight": "56px","letterSpacing": "-0.02em","fontWeight": "600"}],"body-md": ["16px", {"lineHeight": "24px","fontWeight": "400"}],"body-lg": ["18px", {"lineHeight": "28px","fontWeight": "400"}],"headline-lg-mobile": ["28px", {"lineHeight": "36px","fontWeight": "600"}]}
             }
         }
-    }catch(_e){}</script></head><body class="bg-background text-on-background min-h-screen flex flex-col md:hidden">
+    }
+}catch(_e){}
+</script>
+<style>
+    body { font-family: 'IBM Plex Sans Arabic', sans-serif; }
+    .mobile-menu-overlay { transition: opacity 0.3s ease; }
+    .mobile-menu-overlay.opacity-100 { opacity: 1; }
+    .mobile-menu-content { transition: transform 0.3s ease; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .chat-bubble-shadow { box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+</style>
+</head>
+<body class="bg-background text-on-background min-h-screen">
+<div class="flex min-h-screen">
+    <!-- Mobile Navigation Overlay -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 z-40 hidden mobile-menu-overlay opacity-0"></div>
+    
+    <!-- Mobile Sidebar -->
+    <aside id="mobile-sidebar" class="fixed right-0 top-0 h-full w-72 bg-primary-container z-50 transform translate-x-full mobile-menu-content flex flex-col py-lg shrink-0">
+        <div class="px-md mb-xl flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img alt="Qarar Logo" class="w-10 h-10 grayscale brightness-200" src="https://lh3.googleusercontent.com/aida/AP1WRLuMMZPHnRw6s71ePeGiD_H-j7Vc2JkTCm38agMhnVHpi0FrSYH554DwGUxaIFwOqo4W57EPHQNHottMjl9IgCv29rhowyOkDFnRWgR_OmkV50ydi-u_2uo82KKJ-MU20Va5_FQsBxG3gRzXeOSY4rG7XuMDaIf8YS22NHHSjZGQHDUuD-UKTwHY4WtY4WWya6cK3DMnrB12QTVsinhAmBAz3bS4zaa_ygTMXtWI10fMlgPv34hJFn6sTNg">
+                <div>
+                    <h1 class="text-headline-md font-bold text-primary-fixed">قرار</h1>
+                    <p class="text-label-sm text-on-primary-container">الذكاء المالي</p>
+                </div>
+            </div>
+            <button id="close-menu" class="text-on-primary-container p-2">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        <nav class="flex-1 px-sm space-y-1">
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="index.html">
+                <span class="material-symbols-outlined">home</span>
+                <span class="text-label-md">الرئيسية</span>
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="analyze.html">
+                <span class="material-symbols-outlined">bar_chart</span>
+                <span class="text-label-md">التحليلات</span>
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="simulate.html">
+                <span class="material-symbols-outlined">account_balance_wallet</span>
+                <span class="text-label-md">المحاكاة</span>
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="prediction.html">
+                <span class="material-symbols-outlined">trending_up</span>
+                <span class="text-label-md">التوقعات</span>
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 bg-secondary text-on-secondary rounded-lg" href="assistant.html">
+                <span class="material-symbols-outlined">psychology</span>
+                <span class="text-label-md">المستشار الذكي</span>
+            </a>
+        </nav>
+        <div class="mt-auto px-md pt-lg space-y-4">
+            <button class="w-full py-3 bg-secondary-fixed text-on-secondary-fixed font-bold rounded-lg text-sm">ترقية الخطة</button>
+            <div class="border-t border-outline-variant opacity-20 my-4"></div>
+            <a class="flex items-center gap-3 px-4 py-2 text-error" href="#">
+                <span class="material-symbols-outlined">logout</span>
+                <span class="text-label-md">تسجيل الخروج</span>
+            </a>
+        </div>
+    </aside>
 
-<!-- TopAppBar -->
+    <!-- Desktop Sidebar -->
+    <aside class="hidden lg:flex flex-col w-64 bg-primary-container border-l border-outline-variant py-lg shrink-0">
+        <div class="px-md mb-xl flex items-center gap-3">
+            <img alt="Qarar Logo" class="w-10 h-10 grayscale brightness-200" src="https://lh3.googleusercontent.com/aida/AP1WRLuMMZPHnRw6s71ePeGiD_H-j7Vc2JkTCm38agMhnVHpi0FrSYH554DwGUxaIFwOqo4W57EPHQNHottMjl9IgCv29rhowyOkDFnRWgR_OmkV50ydi-u_2uo82KKJ-MU20Va5_FQsBxG3gRzXeOSY4rG7XuMDaIf8YS22NHHSjZGQHDUuD-UKTwHY4WtY4WWya6cK3DMnrB12QTVsinhAmBAz3bS4zaa_ygTMXtWI10fMlgPv34hJFn6sTNg">
+            <div>
+                <h1 class="text-headline-md font-bold text-primary-fixed">قرار</h1>
+                <p class="text-label-sm text-on-primary-container">الذكاء المالي</p>
+            </div>
+        </div>
+        <nav class="flex-1 px-sm space-y-1">
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="index.html">
+                <span class="material-symbols-outlined">home</span>
+                <span class="text-label-md">الرئيسية</span>
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="analyze.html">
+                <span class="material-symbols-outlined">bar_chart</span>
+                <span class="text-label-md">التحليلات</span>
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="simulate.html">
+                <span class="material-symbols-outlined">account_balance_wallet</span>
+                <span class="text-label-md">المحاكاة</span>
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="prediction.html">
+                <span class="material-symbols-outlined">trending_up</span>
+                <span class="text-label-md">التوقعات</span>
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 bg-secondary text-on-secondary rounded-lg" href="assistant.html">
+                <span class="material-symbols-outlined">psychology</span>
+                <span class="text-label-md">المستشار</span>
+            </a>
+        </nav>
+        <div class="mt-auto px-md pt-lg">
+            <button class="w-full py-3 bg-secondary-fixed text-on-secondary-fixed font-bold rounded-lg text-sm mb-4">ترقية الخطة</button>
+        </div>
+    </aside>
+
+<div class="flex-1 flex flex-col">
 <header class="bg-surface-container-lowest sticky top-0 border-b border-outline-variant flex justify-between items-center px-lg py-md w-full z-30">
     <div class="flex items-center gap-md">
-        <button aria-label="Menu" class="text-on-surface-variant hover:bg-surface-container-low p-sm rounded-full transition-colors duration-200">
-            <span class="material-symbols-outlined" data-icon="menu">menu</span>
+        <button id="open-menu" aria-label="Menu" class="lg:hidden text-on-surface-variant hover:bg-surface-container-low p-sm rounded-full transition-colors duration-200">
+            <span class="material-symbols-outlined">menu</span>
         </button>
-        <div class="flex items-center gap-sm">
-            <img alt="Qarar Brand" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxZkK245KeWU8odeLlYYoIV0R7Li935EKbrnAAj1FqO21U1u77qUM_Px6rjc_MdPpzfAg-JRskq54lTkH7IjWLsYRBpHFis8-m1bw9x0I1E_1okIoBTJTcma41EnhgD81T4nDKzzyj7xTOSnhoXGTH6aAp8Lfl1_9I8pM7JAS4g-oepICRq5N2v9pA1rD1V2RHoACE6CZwFGvGKY3NKdv9B8IP9wzgltecP9AmO2wrLgitHWY3p2K8">
-            <div>
-                <h1 class="font-headline-md text-headline-md font-bold text-primary">Qarar</h1>
-                <p class="font-label-sm text-label-sm text-on-surface-variant leading-none">المستشار المالي</p>
-            </div>
+        <div>
+            <h1 class="font-headline-md text-headline-md font-bold text-primary">Qarar</h1>
+            <p class="font-label-sm text-label-sm text-on-surface-variant leading-none">المستشار المالي</p>
         </div>
     </div>
     <div class="flex items-center gap-xs">
         <button aria-label="Notifications" class="text-on-surface-variant hover:bg-surface-container-low p-sm rounded-full transition-colors duration-200">
-            <span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+            <span class="material-symbols-outlined">notifications</span>
         </button>
         <img alt="User profile photo" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxZkK245KeWU8odeLlYYoIV0R7Li935EKbrnAAj1FqO21U1u77qUM_Px6rjc_MdPpzfAg-JRskq54lTkH7IjWLsYRBpHFis8-m1bw9x0I1E_1okIoBTJTcma41EnhgD81T4nDKzzyj7xTOSnhoXGTH6aAp8Lfl1_9I8pM7JAS4g-oepICRq5N2v9pA1rD1V2RHoACE6CZwFGvGKY3NKdv9B8IP9wzgltecP9AmO2wrLgitHWY3p2K8">
     </div>
@@ -119,45 +141,39 @@
 
 <!-- Main Chat Area -->
 <main class="flex-1 flex flex-col relative overflow-hidden">
-    <!-- Chat Canvas -->
-    <div class="flex-1 p-md overflow-y-auto no-scrollbar flex flex-col gap-lg pb-[160px]">
-        <!-- Insight Banner -->
+    <div class="flex-1 p-md overflow-y-auto no-scrollbar flex flex-col gap-lg pb-[200px]">
         <div class="bg-surface-container-low border border-outline-variant rounded-xl p-md flex gap-sm items-start mb-sm">
-            <span class="material-symbols-outlined text-secondary shrink-0" data-icon="lightbulb">lightbulb</span>
+            <span class="material-symbols-outlined text-secondary shrink-0">lightbulb</span>
             <div>
                 <h3 class="font-label-md text-label-md text-on-surface mb-xs">رؤى المستشار</h3>
                 <p class="font-body-sm text-body-sm text-on-surface-variant">بناءً على نفقاتك الأخيرة، يمكنك زيادة مدخراتك بنسبة 15% هذا الشهر إذا قللت من مصاريف الترفيه.</p>
             </div>
         </div>
 
-        <!-- Advisor Message -->
         <div class="flex gap-sm items-start max-w-[85%] self-start">
             <div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center shrink-0">
-                <span class="material-symbols-outlined text-on-primary-fixed text-[18px]" data-icon="smart_toy">smart_toy</span>
+                <span class="material-symbols-outlined text-on-primary-fixed text-[18px]">smart_toy</span>
             </div>
             <div class="bg-surface-container-lowest border border-outline-variant rounded-xl rounded-tr-none p-md chat-bubble-shadow">
                 <p class="font-body-md text-body-md text-on-surface">مرحباً! أنا مساعد Qarar المالي. كيف يمكنني مساعدتك في التخطيط المالي اليوم؟</p>
             </div>
         </div>
 
-        <!-- User Message -->
         <div class="flex gap-sm items-end max-w-[85%] self-end flex-row-reverse">
             <div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 overflow-hidden">
-                <span class="material-symbols-outlined text-on-surface-variant text-[20px]" data-icon="person">person</span>
+                <span class="material-symbols-outlined text-on-surface-variant text-[20px]">person</span>
             </div>
             <div class="bg-primary text-on-primary rounded-xl rounded-tl-none p-md chat-bubble-shadow">
                 <p class="font-body-md text-body-md">كم يجب أن أوفر للجامعة؟</p>
             </div>
         </div>
 
-        <!-- Advisor Message - Complex Response -->
         <div class="flex gap-sm items-start max-w-[92%] self-start">
             <div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center shrink-0">
-                <span class="material-symbols-outlined text-on-primary-fixed text-[18px]" data-icon="smart_toy">smart_toy</span>
+                <span class="material-symbols-outlined text-on-primary-fixed text-[18px]">smart_toy</span>
             </div>
             <div class="bg-surface-container-lowest border border-outline-variant rounded-xl rounded-tr-none p-md w-full chat-bubble-shadow">
                 <p class="font-body-md text-body-md text-on-surface mb-md">بناءً على أهدافك الحالية ودخلك الشهري، إليك تحليل مقترح لمدخرات الجامعة:</p>
-                
                 <div class="bg-surface p-md rounded-lg border border-surface-variant mb-md">
                     <div class="flex justify-between items-center mb-sm">
                         <span class="font-label-sm text-label-sm text-on-surface-variant">الهدف الإجمالي</span>
@@ -177,46 +193,73 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="flex items-center gap-sm bg-secondary-container/10 p-sm rounded-lg border border-secondary-container/20">
-                    <span class="material-symbols-outlined text-secondary text-[20px]" data-icon="calendar_month">calendar_month</span>
+                    <span class="material-symbols-outlined text-secondary text-[20px]">calendar_month</span>
                     <p class="font-body-sm text-body-sm text-on-surface">أقترح تخصيص <span class="font-bold text-secondary">2,500 ريال</span> شهرياً للوصول إلى هدفك خلال 3 سنوات.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Input Area (Fixed above BottomNavBar) -->
-    <div class="absolute bottom-0 w-full bg-background/95 backdrop-blur-sm border-t border-outline-variant p-md flex flex-col gap-sm pb-[80px] z-20 shadow-[0_-8px_16px_-4px_rgba(0,0,0,0.05)]">
-        <!-- Suggested Questions Chips -->
+    <!-- Input Area (Fixed bottom) -->
+    <div class="absolute bottom-0 w-full bg-background/95 backdrop-blur-sm border-t border-outline-variant p-md flex flex-col gap-sm z-20 shadow-[0_-8px_16px_-4px_rgba(0,0,0,0.05)]">
         <div class="flex gap-sm overflow-x-auto no-scrollbar pb-xs w-full">
             <button class="shrink-0 bg-surface-container-lowest border border-outline-variant hover:bg-surface-container-high hover:border-secondary text-on-surface font-label-md text-label-md px-md py-sm rounded-full transition-all whitespace-nowrap flex items-center gap-xs">
-                <span class="material-symbols-outlined text-[16px]" data-icon="trending_down">trending_down</span>
+                <span class="material-symbols-outlined text-[16px]">trending_down</span>
                 ما هي أكبر مصاريفي؟
             </button>
             <button class="shrink-0 bg-surface-container-lowest border border-outline-variant hover:bg-surface-container-high hover:border-secondary text-on-surface font-label-md text-label-md px-md py-sm rounded-full transition-all whitespace-nowrap flex items-center gap-xs">
-                <span class="material-symbols-outlined text-[16px]" data-icon="payments">payments</span>
+                <span class="material-symbols-outlined text-[16px]">payments</span>
                 كيف أقلل الديون؟
             </button>
             <button class="shrink-0 bg-surface-container-lowest border border-outline-variant hover:bg-surface-container-high hover:border-secondary text-on-surface font-label-md text-label-md px-md py-sm rounded-full transition-all whitespace-nowrap flex items-center gap-xs">
-                <span class="material-symbols-outlined text-[16px]" data-icon="monitoring">monitoring</span>
+                <span class="material-symbols-outlined text-[16px]">monitoring</span>
                 تحليل الاستثمار
             </button>
         </div>
-        <!-- Text Input -->
         <div class="relative flex items-center gap-sm">
             <div class="relative flex-1">
                 <input class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl py-md px-md pr-12 text-body-md font-body-md focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-all placeholder:text-outline text-on-surface" placeholder="اكتب رسالتك هنا..." type="text">
                 <button aria-label="Voice input" class="absolute right-md top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-secondary transition-colors">
-                    <span class="material-symbols-outlined" data-icon="mic">mic</span>
+                    <span class="material-symbols-outlined">mic</span>
                 </button>
             </div>
             <button aria-label="Send message" class="shrink-0 w-12 h-12 flex items-center justify-center rounded-xl bg-secondary text-on-primary shadow-lg active:scale-95 transition-transform">
-                <span class="material-symbols-outlined rtl:rotate-180" data-icon="send">send</span>
+                <span class="material-symbols-outlined rtl:rotate-180">send</span>
             </button>
         </div>
     </div>
 </main>
+</div>
+</div>
 
-<!-- BottomNavBar -->
-<nav class="bg-surface-container-lowest fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-md py-xs pb-safe border-t border-outline-variant"><a class="flex flex-col items-center justify-center text-on-surface-variant p-xs scale-95 active:scale-90 transition-transform duration-150 hover:bg-surface-container-low rounded-xl" href="index.html"><span class="material-symbols-outlined" data-icon="dashboard">dashboard</span><span class="font-label-sm text-label-sm mt-1">الرئيسية</span></a><a class="flex flex-col items-center justify-center text-on-surface-variant p-xs scale-95 active:scale-90 transition-transform duration-150 hover:bg-surface-container-low rounded-xl" href="analyze.html"><span class="material-symbols-outlined" data-icon="analytics">analytics</span><span class="font-label-sm text-label-sm mt-1">التحليل</span></a><a class="flex flex-col items-center justify-center text-on-surface-variant p-xs scale-95 active:scale-90 transition-transform duration-150 hover:bg-surface-container-low rounded-xl" href="simulate.html"><span class="material-symbols-outlined" data-icon="query_stats">query_stats</span><span class="font-label-sm text-label-sm mt-1">المحاكاة</span></a><a class="flex flex-col items-center justify-center text-on-surface-variant p-xs scale-95 active:scale-90 transition-transform duration-150 hover:bg-surface-container-low rounded-xl" href="forecast.html"><span class="material-symbols-outlined" data-icon="trending_up">trending_up</span><span class="font-label-sm text-label-sm mt-1">التوقعات</span></a><a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl p-xs scale-95 active:scale-90 transition-transform duration-150 w-16" href="assistant.html"><span class="material-symbols-outlined fill-icon" data-icon="smart_toy">smart_toy</span><span class="font-label-sm text-label-sm mt-1">المستشار</span></a></nav></body></html>
+<script>
+    const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+    const mobileSidebar = document.getElementById('mobile-sidebar');
+    const openMenuBtn = document.getElementById('open-menu');
+    const closeMenuBtn = document.getElementById('close-menu');
+
+    function toggleMenu(show) {
+        if (show) {
+            mobileMenuOverlay.classList.remove('hidden');
+            mobileSidebar.classList.remove('translate-x-full');
+            requestAnimationFrame(() => { mobileMenuOverlay.classList.add('opacity-100'); });
+        } else {
+            mobileMenuOverlay.classList.remove('opacity-100');
+            mobileSidebar.classList.add('translate-x-full');
+            mobileSidebar.addEventListener('transitionend', handleTransitionEnd, { once: true });
+        }
+    }
+
+    function handleTransitionEnd() {
+        if (mobileSidebar.classList.contains('translate-x-full')) {
+            mobileMenuOverlay.classList.add('hidden');
+        }
+    }
+
+    openMenuBtn?.addEventListener('click', () => toggleMenu(true));
+    closeMenuBtn?.addEventListener('click', () => toggleMenu(false));
+    mobileMenuOverlay?.addEventListener('click', () => toggleMenu(false));
+</script>
+</body>
+</html>
