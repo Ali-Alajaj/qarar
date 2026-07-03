@@ -1,88 +1,39 @@
-<!DOCTYPE html><html dir="rtl" lang="ar" class="light"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface": "#f7f9fb",
-                        "secondary-container": "#2170e4",
-                        "on-primary": "#ffffff",
-                        "tertiary-fixed-dim": "#4edea3",
-                        "inverse-surface": "#2d3133",
-                        "background": "#f7f9fb",
-                        "surface-container": "#eceef0",
-                        "surface-container-highest": "#e0e3e5",
-                        "outline-variant": "#c6c6cd",
-                        "on-secondary-fixed-variant": "#004395",
-                        "surface-tint": "#565e74",
-                        "tertiary-container": "#002113",
-                        "inverse-primary": "#bec6e0",
-                        "error": "#ba1a1a",
-                        "on-primary-fixed-variant": "#3f465c",
-                        "on-tertiary-container": "#009668",
-                        "secondary": "#0058be",
-                        "inverse-on-surface": "#eff1f3",
-                        "surface-container-lowest": "#ffffff",
-                        "surface-dim": "#d8dadc",
-                        "tertiary": "#000000",
-                        "on-error-container": "#93000a",
-                        "primary-fixed": "#dae2fd",
-                        "on-tertiary": "#ffffff",
-                        "secondary-fixed-dim": "#adc6ff",
-                        "on-tertiary-fixed": "#002113",
-                        "on-primary-container": "#7c839b",
-                        "on-background": "#191c1e",
-                        "primary-fixed-dim": "#bec6e0",
-                        "primary": "#000000",
-                        "on-primary-fixed": "#131b2e",
-                        "on-error": "#ffffff",
-                        "tertiary-fixed": "#6ffbbe",
-                        "on-secondary-fixed": "#001a42",
-                        "on-secondary": "#ffffff",
-                        "surface-container-high": "#e6e8ea",
-                        "primary-container": "#131b2e",
-                        "on-surface": "#191c1e",
-                        "surface-variant": "#e0e3e5",
-                        "surface-bright": "#f7f9fb",
-                        "on-secondary-container": "#fefcff",
-                        "on-tertiary-fixed-variant": "#005236",
-                        "secondary-fixed": "#d8e2ff",
-                        "on-surface-variant": "#45464d",
-                        "error-container": "#ffdad6",
-                        "outline": "#76777d",
-                        "surface-container-low": "#f2f4f6"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "spacing": {
-                        "container-margin": "40px",
-                        "sm": "8px",
-                        "xs": "4px",
-                        "lg": "24px",
-                        "gutter": "20px",
-                        "md": "16px",
-                        "base": "4px",
-                        "xl": "32px"
-                    },
-                    "fontFamily": {
-                        "headline-lg": ["IBM Plex Sans Arabic"],
-                        "body-sm": ["IBM Plex Sans Arabic"],
-                        "label-sm": ["IBM Plex Sans Arabic"],
-                        "label-md": ["IBM Plex Sans Arabic"],
-                        "headline-md": ["IBM Plex Sans Arabic"],
-                        "display-lg": ["IBM Plex Sans Arabic"],
-                        "body-md": ["IBM Plex Sans Arabic"],
-                        "body-lg": ["IBM Plex Sans Arabic"],
-                        "headline-lg-mobile": ["IBM Plex Sans Arabic"]
-                    }
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" class="light">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Qarar - الرئيسية</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+try{
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "surface": "#f7f9fb","secondary-container": "#2170e4","on-primary": "#ffffff","tertiary-fixed-dim": "#4edea3","inverse-surface": "#2d3133","background": "#f7f9fb","surface-container": "#eceef0","surface-container-highest": "#e0e3e5","outline-variant": "#c6c6cd","on-secondary-fixed-variant": "#004395","surface-tint": "#565e74","tertiary-container": "#002113","inverse-primary": "#bec6e0","error": "#ba1a1a","on-primary-fixed-variant": "#3f465c","on-tertiary-container": "#009668","secondary": "#0058be","inverse-on-surface": "#eff1f3","surface-container-lowest": "#ffffff","surface-dim": "#d8dadc","tertiary": "#000000","on-error-container": "#93000a","primary-fixed": "#dae2fd","on-tertiary": "#ffffff","secondary-fixed-dim": "#adc6ff","on-tertiary-fixed": "#002113","on-primary-container": "#7c839b","on-background": "#191c1e","primary-fixed-dim": "#bec6e0","primary": "#000000","on-primary-fixed": "#131b2e","on-error": "#ffffff","tertiary-fixed": "#6ffbbe","on-secondary-fixed": "#001a42","on-secondary": "#ffffff","surface-container-high": "#e6e8ea","primary-container": "#131b2e","on-surface": "#191c1e","surface-variant": "#e0e3e5","surface-bright": "#f7f9fb","on-secondary-container": "#fefcff","on-tertiary-fixed-variant": "#005236","secondary-fixed": "#d8e2ff","on-surface-variant": "#45464d","error-container": "#ffdad6","outline": "#76777d","surface-container-low": "#f2f4f6"
+                },
+                "borderRadius": {"DEFAULT": "0.125rem","lg": "0.25rem","xl": "0.5rem","full": "0.75rem"},
+                "spacing": {"container-margin": "40px","sm": "8px","xs": "4px","lg": "24px","gutter": "20px","md": "16px","base": "4px","xl": "32px"},
+                "fontFamily": {
+                    "headline-lg": ["IBM Plex Sans Arabic"],"body-sm": ["IBM Plex Sans Arabic"],"label-sm": ["IBM Plex Sans Arabic"],"label-md": ["IBM Plex Sans Arabic"],"headline-md": ["IBM Plex Sans Arabic"],"display-lg": ["IBM Plex Sans Arabic"],"body-md": ["IBM Plex Sans Arabic"],"body-lg": ["IBM Plex Sans Arabic"],"headline-lg-mobile": ["IBM Plex Sans Arabic"]
                 }
             }
         }
-    }catch(_e){}</script></head><body class="bg-surface">
+    }
+}catch(_e){}
+</script>
+<style>
+    body { font-family: 'IBM Plex Sans Arabic', sans-serif; }
+    .mobile-menu-overlay { transition: opacity 0.3s ease; }
+    .mobile-menu-overlay.opacity-100 { opacity: 1; }
+    .mobile-menu-content { transition: transform 0.3s ease; }
+</style>
+</head>
+<body class="bg-surface">
 <div class="flex h-screen overflow-hidden relative">
 
     <!-- Mobile Navigation Overlay -->
@@ -115,6 +66,10 @@
                 <span class="material-symbols-outlined">account_balance_wallet</span>
                 <span class="text-label-md">المحاكاة</span>
             </a>
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="prediction.html">
+                <span class="material-symbols-outlined">trending_up</span>
+                <span class="text-label-md">التوقعات</span>
+            </a>
             <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="assistant.html">
                 <span class="material-symbols-outlined">psychology</span>
                 <span class="text-label-md">المستشار الذكي</span>
@@ -130,7 +85,7 @@
         </div>
     </aside>
 
-    <!-- Desktop Sidebar (Hidden on Mobile) -->
+    <!-- Desktop Sidebar -->
     <aside class="hidden lg:flex flex-col w-64 bg-primary-container border-l border-outline-variant py-lg shrink-0">
         <div class="px-md mb-xl flex items-center gap-3">
             <img alt="Qarar Logo" class="w-10 h-10 grayscale brightness-200" src="https://lh3.googleusercontent.com/aida/AP1WRLuMMZPHnRw6s71ePeGiD_H-j7Vc2JkTCm38agMhnVHpi0FrSYH554DwGUxaIFwOqo4W57EPHQNHottMjl9IgCv29rhowyOkDFnRWgR_OmkV50ydi-u_2uo82KKJ-MU20Va5_FQsBxG3gRzXeOSY4rG7XuMDaIf8YS22NHHSjZGQHDUuD-UKTwHY4WtY4WWya6cK3DMnrB12QTVsinhAmBAz3bS4zaa_ygTMXtWI10fMlgPv34hJFn6sTNg">
@@ -152,6 +107,10 @@
                 <span class="material-symbols-outlined">account_balance_wallet</span>
                 <span class="text-label-md">المحاكاة</span>
             </a>
+            <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="prediction.html">
+                <span class="material-symbols-outlined">trending_up</span>
+                <span class="text-label-md">التوقعات</span>
+            </a>
             <a class="flex items-center gap-3 px-4 py-3 text-on-primary-container hover:bg-secondary-container transition-colors" href="assistant.html">
                 <span class="material-symbols-outlined">psychology</span>
                 <span class="text-label-md">المستشار</span>
@@ -162,30 +121,32 @@
         </div>
     </aside>
 
-    <main class="flex-1 flex flex-col overflow-y-auto pb-20">
+    <main class="flex-1 flex flex-col overflow-y-auto">
         <!-- TopNavBar -->
-        <header class="h-16 bg-surface-container-lowest border-b border-outline-variant flex justify-between items-center px-md lg:px-lg w-full shrink-0"><div class="flex items-center gap-md lg:gap-lg">
-    <button class="lg:hidden p-2 text-on-surface-variant" id="open-menu">
-        <span class="material-symbols-outlined">menu</span>
-    </button>
-    <div class="flex items-center gap-2">
-        <h1 class="text-xl lg:text-headline-md font-bold text-primary">قرار</h1>
-        <span class="hidden sm:block text-xs text-on-surface-variant border-r border-outline-variant pr-2 mr-2">الذكاء المالي</span>
-    </div>
-</div>
-<div class="flex items-center gap-sm lg:gap-md">
-    <div class="relative w-full max-w-xs hidden md:block mr-4">
-        <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-sm">search</span>
-        <input class="w-full pr-10 pl-4 py-2 bg-surface-container-low border-outline-variant rounded-lg text-sm" placeholder="البحث..." type="text">
-    </div>
-    <button class="p-2 text-on-surface-variant relative">
-        <span class="material-symbols-outlined">notifications</span>
-        <span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full border-2 border-white"></span>
-    </button>
-    <div class="flex items-center gap-2 lg:gap-3 mr-2 cursor-pointer">
-        <img class="w-8 h-8 lg:w-10 lg:h-10 rounded-full border border-outline-variant object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPG8CrmUK9PdMLNpAYBKLnOceNf44B0VP2XKR4SX9CXmIJdnvwlOFIRdcL6o22Q4P3E4GlAs5MS2-p5Gyi6yXs5PzHbmiC7MV6sQbHaEav2NozISrd__mmoU3ESzVebbioTpPscZ2r7AnrSqsqjJuaD92VTB2VWFLr0flUZuUiU5urlDLLTD9XevY-hdtdtSfN55aRq1WHp9_N7VcotrcduBzp2SPrQ_pLKwjTX8cTNOu4_G6kt3-C" alt="User Avatar">
-    </div>
-</div></header>
+        <header class="h-16 bg-surface-container-lowest border-b border-outline-variant flex justify-between items-center px-md lg:px-lg w-full shrink-0 sticky top-0 z-30">
+            <div class="flex items-center gap-md lg:gap-lg">
+                <button class="lg:hidden p-2 text-on-surface-variant" id="open-menu">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="flex items-center gap-2">
+                    <h1 class="text-xl lg:text-headline-md font-bold text-primary">قرار</h1>
+                    <span class="hidden sm:block text-xs text-on-surface-variant border-r border-outline-variant pr-2 mr-2">الذكاء المالي</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-sm lg:gap-md">
+                <div class="relative w-full max-w-xs hidden md:block mr-4">
+                    <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-sm">search</span>
+                    <input class="w-full pr-10 pl-4 py-2 bg-surface-container-low border-outline-variant rounded-lg text-sm" placeholder="البحث..." type="text">
+                </div>
+                <button class="p-2 text-on-surface-variant relative">
+                    <span class="material-symbols-outlined">notifications</span>
+                    <span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full border-2 border-white"></span>
+                </button>
+                <div class="flex items-center gap-2 lg:gap-3 mr-2 cursor-pointer">
+                    <img class="w-8 h-8 lg:w-10 lg:h-10 rounded-full border border-outline-variant object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPG8CrmUK9PdMLNpAYBKLnOceNf44B0VP2XKR4SX9CXmIJdnvwlOFIRdcL6o22Q4P3E4GlAs5MS2-p5Gyi6yXs5PzHbmiC7MV6sQbHaEav2NozISrd__mmoU3ESzVebbioTpPscZ2r7AnrSqsqjJuaD92VTB2VWFLr0flUZuUiU5urlDLLTD9XevY-hdtdtSfN55aRq1WHp9_N7VcotrcduBzp2SPrQ_pLKwjTX8cTNOu4_G6kt3-C" alt="User Avatar">
+                </div>
+            </div>
+        </header>
 
         <!-- Main Content Area -->
         <div class="p-md lg:p-lg space-y-md lg:space-y-lg max-w-7xl mx-auto w-full">
@@ -202,8 +163,8 @@
                         <h2 class="text-2xl lg:text-headline-lg font-bold text-white mb-sm lg:mb-md">مسار القرار الذكي</h2>
                         <p class="text-sm lg:text-body-md text-on-primary-container mb-md lg:mb-lg">نظام تحليل متطور يربط أهدافك المالية ببيانات السوق الحية.</p>
                         <div class="flex flex-wrap gap-2 lg:gap-md">
-                            <button class="flex-1 sm:flex-none px-4 lg:px-6 py-2 lg:py-3 bg-secondary text-white font-bold rounded-lg text-sm">تحليل المسار</button>
-                            <button class="flex-1 sm:flex-none px-4 lg:px-6 py-2 lg:py-3 border border-outline text-white font-bold rounded-lg text-sm">التوقعات</button>
+                            <a href="analyze.html" class="flex-1 sm:flex-none px-4 lg:px-6 py-2 lg:py-3 bg-secondary text-white font-bold rounded-lg text-sm text-center">تحليل المسار</a>
+                            <a href="prediction.html" class="flex-1 sm:flex-none px-4 lg:px-6 py-2 lg:py-3 border border-outline text-white font-bold rounded-lg text-sm text-center">التوقعات</a>
                         </div>
                     </div>
                     <div class="hidden lg:flex justify-end">
@@ -221,13 +182,13 @@
             </section>
 
             <!-- Metrics Grid -->
-            <div class="bento-grid">
-                <!-- Stability Score Card (Top on Mobile) -->
-                <div class="order-1 lg:order-3 bg-white border border-outline-variant p-lg rounded-xl flex items-center gap-md lg:gap-lg">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-md">
+                <!-- Stability Score Card -->
+                <div class="order-1 lg:order-3 lg:col-span-4 bg-white border border-outline-variant p-lg rounded-xl flex items-center gap-md lg:gap-lg">
                     <div class="relative w-20 h-20 lg:w-24 lg:h-24 flex-shrink-0">
-                        <svg class="w-full h-full transform -rotate-90">
-                            <circle cx="40" cy="40" fill="transparent" r="34" stroke="#f1f5f9" stroke-width="6" class="lg:cx-48 lg:cy-48 lg:r-40 lg:stroke-8"></circle>
-                            <circle cx="40" cy="40" fill="transparent" r="34" stroke="#0058be" stroke-dasharray="213.6" stroke-dashoffset="53.4" stroke-width="6" class="lg:cx-48 lg:cy-48 lg:r-40 lg:stroke-8"></circle>
+                        <svg class="w-full h-full transform -rotate-90" viewBox="0 0 80 80">
+                            <circle cx="40" cy="40" fill="transparent" r="34" stroke="#f1f5f9" stroke-width="6"></circle>
+                            <circle cx="40" cy="40" fill="transparent" r="34" stroke="#0058be" stroke-dasharray="213.6" stroke-dashoffset="53.4" stroke-width="6"></circle>
                         </svg>
                         <div class="absolute inset-0 flex items-center justify-center">
                             <span class="text-lg lg:text-xl font-bold text-on-surface">75</span>
@@ -240,7 +201,7 @@
                 </div>
 
                 <!-- Balance Card -->
-                <div class="order-2 lg:order-1 bg-white border border-outline-variant p-lg rounded-xl flex flex-col justify-between min-h-[160px]">
+                <div class="order-2 lg:order-1 lg:col-span-4 bg-white border border-outline-variant p-lg rounded-xl flex flex-col justify-between min-h-[160px]">
                     <div>
                         <div class="flex justify-between items-center mb-md">
                             <span class="text-xs lg:text-label-md text-on-surface-variant">إجمالي الرصيد</span>
@@ -255,7 +216,7 @@
                 </div>
 
                 <!-- Expenses Card -->
-                <div class="order-3 lg:order-2 bg-white border border-outline-variant p-lg rounded-xl flex flex-col justify-between min-h-[160px]">
+                <div class="order-3 lg:order-2 lg:col-span-4 bg-white border border-outline-variant p-lg rounded-xl flex flex-col justify-between min-h-[160px]">
                     <div>
                         <div class="flex justify-between items-center mb-md">
                             <span class="text-xs lg:text-label-md text-on-surface-variant">المصروفات</span>
@@ -322,7 +283,7 @@
                     </div>
                 </div>
 
-                <!-- Recent Transactions (Full width on all screens) -->
+                <!-- Recent Transactions -->
                 <div class="order-6 lg:col-span-12 bg-white border border-outline-variant rounded-xl overflow-hidden">
                     <div class="px-md py-4 bg-surface-container-low border-b border-outline-variant flex justify-between items-center">
                         <h4 class="font-bold text-on-surface text-sm">آخر العمليات</h4>
@@ -367,7 +328,7 @@
     </main>
 </div>
 
-<script class="">
+<script>
     const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
     const mobileSidebar = document.getElementById('mobile-sidebar');
     const openMenuBtn = document.getElementById('open-menu');
@@ -376,12 +337,26 @@
     function toggleMenu(show) {
         if (show) {
             mobileMenuOverlay.classList.remove('hidden');
-            setTimeout(() => {
+            mobileSidebar.classList.remove('translate-x-full');
+            requestAnimationFrame(() => {
                 mobileMenuOverlay.classList.add('opacity-100');
-                mobileSidebar.classList.remove('translate-x-full');
-            }, 10);
+            });
         } else {
             mobileMenuOverlay.classList.remove('opacity-100');
             mobileSidebar.classList.add('translate-x-full');
-            setTimeout(() => {
-                mobileMenuOverlay.</script></body></html>
+            mobileSidebar.addEventListener('transitionend', handleTransitionEnd, { once: true });
+        }
+    }
+
+    function handleTransitionEnd() {
+        if (mobileSidebar.classList.contains('translate-x-full')) {
+            mobileMenuOverlay.classList.add('hidden');
+        }
+    }
+
+    openMenuBtn?.addEventListener('click', () => toggleMenu(true));
+    closeMenuBtn?.addEventListener('click', () => toggleMenu(false));
+    mobileMenuOverlay?.addEventListener('click', () => toggleMenu(false));
+</script>
+</body>
+</html>
